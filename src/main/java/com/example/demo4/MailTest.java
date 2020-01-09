@@ -21,7 +21,7 @@ import java.util.Date;
 //虽然报错，但是发出去消息了
 @Controller
 class MailTest {
-    //我tm也做了一些修改我也想提交
+    // 我tm也做了一些修改我也想提交
     @Autowired
     TemplateEngine templateEngine;
     @Autowired
