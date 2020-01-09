@@ -30,6 +30,8 @@ class MailTest {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setSubject("法律手段街坊邻居");
         message.setFrom("1651200109@qq.com");//发送者
+        message.setSubject("这是一封测试邮件");
+        message.setFrom("abcdefg@qq.com");//发送者
         String []strs=new String[]{"1605659095@qq.com","123456@qq.com"};
         //可变变量其实就是数组？可以传数组
         ArrayList<String> arrayList = new ArrayList<String>();
