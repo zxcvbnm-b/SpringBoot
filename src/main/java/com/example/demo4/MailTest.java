@@ -2,14 +2,11 @@ package com.example.demo4;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.testng.annotations.Test;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
@@ -19,14 +16,15 @@ import java.util.Date;
 
 //导入包快捷键：alt+enter 加上类似eclipse crtl+1的功能
 //虽然报错，但是发出去消息了
+
 @Controller
 class MailTest {
     @Autowired
     TemplateEngine templateEngine;
     @Autowired
    private JavaMailSenderImpl javaMailSenderImpl;
+  //我修改了一些东西
 
-    @Test
     public void sendSimpleMail() {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setSubject("这是一封测试邮件");
