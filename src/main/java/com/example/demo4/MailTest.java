@@ -29,7 +29,7 @@ class MailTest {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setSubject("这是一封测试邮件");
         message.setFrom("1651200109@qq.com");//发送者
-        String []strs=new String[]{"123456@qq.com","123456@qq.com"};
+        String []strs=new String[]{"abcderf@qq.com","123456@qq.com"};
         //可变变量其实就是数组？可以传数组
         ArrayList<String> arrayList = new ArrayList<String>();
         String[] objects = arrayList.toArray(new String[arrayList.size()]);//list转string字符串
